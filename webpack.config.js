@@ -1,14 +1,14 @@
 var path = require('path');
-var HtmlWebpackPlugin =  require('html-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry : './src/index.js',
-  output : {
-    path : path.resolve(__dirname , 'dist'),
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js'
   },
-  module : {
-    rules : [
+  module: {
+    rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
@@ -24,14 +24,13 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: ['style-loader', 'css-loader']
-      },
+      }
     ]
   },
-  mode:'development',
-  plugins : [
-    new HtmlWebpackPlugin ({
-      template : 'src/index.html'
+  mode: 'development',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
     })
   ]
-
-}
+};
