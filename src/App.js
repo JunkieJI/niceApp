@@ -1,10 +1,10 @@
 import React from 'react';
-import Albums from './Albums';
+import Users from './Users';
 
 const App = () => {
   return (
     <div>
-      <Albums />
+      <Users />
     </div>
   );
 };

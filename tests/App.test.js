@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from '../src/App';
-import Albums from '../src/Albums';
+import Users from '../src/Users';
 
-describe('Appjs Tests', () => {
+describe('App Tests', () => {
   it('renders without crashing', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.exists(Albums)).toEqual(true);
+    expect(wrapper.exists(Users)).toEqual(true);
   });
 });
