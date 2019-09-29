@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, Col } from "react-bootstrap";
 import StarRatingComponent from "react-star-rating-component";
 
-// Using class based component as there is an ongoing issue with testing state and functional components -
+// Using class based component as there is an ongoing issues using enzyme and testing functional components - https://github.com/airbnb/enzyme/issues/2011
 class UserCard extends Component {
   state = {
     rating: 0

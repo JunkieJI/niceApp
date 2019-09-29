@@ -3,7 +3,7 @@ import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 
 import UserCard from './UserCard';
 
-// Using class based component as there is an ongoing issue with testing state and functional components -
+// Using class based component as there is an ongoing issues using enzyme and testing functional components - https://github.com/airbnb/enzyme/issues/2011
 class Users extends Component {
   state = {
     users: [],
